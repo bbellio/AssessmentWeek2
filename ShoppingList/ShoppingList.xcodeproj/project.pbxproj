@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		FC53E27C233E5DB6002CA74C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E27B233E5DB6002CA74C /* AppDelegate.swift */; };
 		FC53E27E233E5DB6002CA74C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E27D233E5DB6002CA74C /* SceneDelegate.swift */; };
-		FC53E280233E5DB6002CA74C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E27F233E5DB6002CA74C /* ViewController.swift */; };
 		FC53E283233E5DB6002CA74C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC53E281233E5DB6002CA74C /* Main.storyboard */; };
 		FC53E286233E5DB6002CA74C /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC53E284233E5DB6002CA74C /* ShoppingList.xcdatamodeld */; };
 		FC53E288233E5DBC002CA74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC53E287233E5DBC002CA74C /* Assets.xcassets */; };
 		FC53E28B233E5DBC002CA74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC53E289233E5DBC002CA74C /* LaunchScreen.storyboard */; };
+		FC53E29A233E6156002CA74C /* ShoppingItem+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E299233E6156002CA74C /* ShoppingItem+Convenience.swift */; };
+		FC53E29E233E61C7002CA74C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E29D233E61C7002CA74C /* CoreDataStack.swift */; };
+		FC53E2A3233E63BD002CA74C /* ShoppingItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E2A2233E63BD002CA74C /* ShoppingItemController.swift */; };
+		FC53E2A6233E66B9002CA74C /* ShoppingItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E2A5233E66B9002CA74C /* ShoppingItemListTableViewController.swift */; };
+		FC53E2A8233E6853002CA74C /* ShoppingItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53E2A7233E6853002CA74C /* ShoppingItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC53E278233E5DB6002CA74C /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC53E27B233E5DB6002CA74C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC53E27D233E5DB6002CA74C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC53E27F233E5DB6002CA74C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC53E282233E5DB6002CA74C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC53E285233E5DB6002CA74C /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
 		FC53E287233E5DBC002CA74C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC53E28A233E5DBC002CA74C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC53E28C233E5DBC002CA74C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC53E299233E6156002CA74C /* ShoppingItem+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingItem+Convenience.swift"; sourceTree = "<group>"; };
+		FC53E29D233E61C7002CA74C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FC53E2A2233E63BD002CA74C /* ShoppingItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemController.swift; sourceTree = "<group>"; };
+		FC53E2A5233E66B9002CA74C /* ShoppingItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemListTableViewController.swift; sourceTree = "<group>"; };
+		FC53E2A7233E6853002CA74C /* ShoppingItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,92 @@
 		FC53E27A233E5DB6002CA74C /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				FC53E294233E5EA7002CA74C /* Models */,
+				FC53E295233E5EAC002CA74C /* Controllers */,
+				FC53E296233E5EB8002CA74C /* Views */,
+				FC53E293233E5E21002CA74C /* Resources */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		FC53E293233E5E21002CA74C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FC53E27B233E5DB6002CA74C /* AppDelegate.swift */,
 				FC53E27D233E5DB6002CA74C /* SceneDelegate.swift */,
-				FC53E27F233E5DB6002CA74C /* ViewController.swift */,
-				FC53E281233E5DB6002CA74C /* Main.storyboard */,
 				FC53E287233E5DBC002CA74C /* Assets.xcassets */,
 				FC53E289233E5DBC002CA74C /* LaunchScreen.storyboard */,
 				FC53E28C233E5DBC002CA74C /* Info.plist */,
-				FC53E284233E5DB6002CA74C /* ShoppingList.xcdatamodeld */,
 			);
-			path = ShoppingList;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FC53E294233E5EA7002CA74C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E284233E5DB6002CA74C /* ShoppingList.xcdatamodeld */,
+				FC53E29B233E6159002CA74C /* Helper Models */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FC53E295233E5EAC002CA74C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E2A4233E6698002CA74C /* View Controllers */,
+				FC53E29F233E627C002CA74C /* Model Controllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FC53E296233E5EB8002CA74C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E298233E5ECF002CA74C /* Custom Views */,
+				FC53E297233E5EBF002CA74C /* Storyboards */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FC53E297233E5EBF002CA74C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E281233E5DB6002CA74C /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FC53E298233E5ECF002CA74C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E2A7233E6853002CA74C /* ShoppingItemTableViewCell.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		FC53E29B233E6159002CA74C /* Helper Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E299233E6156002CA74C /* ShoppingItem+Convenience.swift */,
+				FC53E29D233E61C7002CA74C /* CoreDataStack.swift */,
+			);
+			name = "Helper Models";
+			sourceTree = "<group>";
+		};
+		FC53E29F233E627C002CA74C /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E2A2233E63BD002CA74C /* ShoppingItemController.swift */,
+			);
+			name = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		FC53E2A4233E6698002CA74C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC53E2A5233E66B9002CA74C /* ShoppingItemListTableViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC53E280233E5DB6002CA74C /* ViewController.swift in Sources */,
+				FC53E29E233E61C7002CA74C /* CoreDataStack.swift in Sources */,
+				FC53E29A233E6156002CA74C /* ShoppingItem+Convenience.swift in Sources */,
 				FC53E286233E5DB6002CA74C /* ShoppingList.xcdatamodeld in Sources */,
 				FC53E27C233E5DB6002CA74C /* AppDelegate.swift in Sources */,
+				FC53E2A8233E6853002CA74C /* ShoppingItemTableViewCell.swift in Sources */,
+				FC53E2A3233E63BD002CA74C /* ShoppingItemController.swift in Sources */,
 				FC53E27E233E5DB6002CA74C /* SceneDelegate.swift in Sources */,
+				FC53E2A6233E66B9002CA74C /* ShoppingItemListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
